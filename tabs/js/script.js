@@ -89,4 +89,20 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     setClock('.timer', deadline);
+
+    //Modal
+
+    const modalTrigger = document.querySelectorAll('[data-modal]');
+    const modal = document.querySelector('.modal');
+    const modalCloseBtn = querySelector('[data-close]');
+
+    modalTrigger.addEventListener('click', () => {
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+    });
+
+    modalCloseBtn.addEventListener('click', () => {
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+    });
 });
