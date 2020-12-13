@@ -194,7 +194,7 @@
     <div class="order">
         <div class="container">
             <div class="title">Заказывай пробный день прямо сейчас!</div>
-            <form action="#" class="order__form">
+            <form action="іserver.php" method="POST" class="order__form">
                 <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
                 <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
                 <img src="icons/right.svg" alt="right">
@@ -259,10 +259,10 @@
         </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal show">
         <div class="modal__dialog">
             <div class="modal__content">
-                <form action="#">
+                <form action="server.php" method="POST">
                     <div data-close class="modal__close">&times;</div>
                     <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
                     <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
